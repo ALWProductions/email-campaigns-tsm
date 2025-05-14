@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, text/html" charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+	
+		<style type="text/css"> 
+			body[data-outlook-cycle] .outlookhide {
+				display:none!important;
+			}
+			[class~="x_hideoutlookweb"] {
+				display:none!important;
+			}
+			body[class=mobilecontent]{
+				display: block !important;
+				max-height: none !important;
+			}
+  			body {
+    			height: 100% !important;
+    			margin: 0 !important;
+    			padding: 0 !important;
+   				width: 100% !important; 
+  			}
+  			#MessageViewBody, #MessageWebViewDiv{
+  				width: 100% !important;
+  				display: block;
+ 		 		margin: 0 auto !important;
+  			}
+			div[style*="margin: 16px 0"] {
+    			margin: 0 !important;
+  			}
+  			div, button {
+    			display: block !important;
+  			}
+ 			table, td {
+    			border-collapse: collapse !important;
+    			mso-table-lspace: 0pt;
+    			mso-table-rspace: 0pt;
+  			}
+			table {
+				border-spacing: 0;
+			}
+  			img {
+    			outline: none;
+    			text-decoration: none;
+    			-ms-interpolation-mode: bicubic;
+  			}
+			h1, h2, h3, h4, h5, h6 {
+				color: #43602C;
+				font-weight: bold;
+			}
+			.header1, .header2, .header3, .header4, .header5, .header6 {
+				color: #43602C;
+				font-weight: bold;
+			}
+			h1, .header1 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 33px;
+			}
+			h2, .header2 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 28px;
+			}
+			h3, .header3 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 24px;
+			}
+			h4, .header4 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 20px;
+			}
+			h5, .header5 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 18px;
+			}
+			h6, .header6 {
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+				font-size: 16px;
+			}
+			.callout-header {
+				font-size: 30px;
+				color: #ffffff;
+				font-weight: bold;
+				line-height: 28px;
+			}
+			p, .paragraph {
+				font-family: "open-sans", sans-serif;
+				font-size: 16px;
+				color: #000000;
+			}
+			.callout-paragraph {
+				font-size: 17px;
+				color: #ffffff;
+				font-weight: 300;
+				line-height: 22px;
+			}
+  			a {
+    			color: #e98300;
+    			outline: none;
+    			text-decoration: underline;
+				font-weight: bold;
+  			}
+  			a[x-apple-data-detectors] {
+    			color: inherit !important;
+    			text-decoration: none !important;
+    			font-size: inherit !important;
+    			font-family: inherit !important;
+    			font-weight: inherit !important;
+    			line-height: inherit !important;
+  			}
+  			* {
+    			text-size-adjust: none;
+    			-webkit-text-size-adjust: none;
+    			-moz-text-size-adjust: none;
+    			-ms-text-size-adjust: none;
+    			-webkit-font-smoothing: antialiased;
+  			}
+			.emailButton {
+				font-family: 'open-sans', sans-serif; 
+				font-size: 16px; 
+				font-weight: bold; 
+				line-height: 120%; 
+				margin: 0; 
+				text-decoration: none; 
+				text-transform: uppercase; 
+				padding: 15px 30px;
+			}
+			.emailButton a {
+				color: #FFFFFF;
+				text-decoration: none; 
+				display: block;
+			}
+  			.ReadMsgBody, .ExternalClass {
+    			width: 100%;
+  			}
+  			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    			line-height: 100%;
+  			}
+  			.gmail {
+    			display: none !important;
+    			width: 0 !important;
+  			}
+			.leftColumnContent{
+            	text-align: right;
+        	}
+			.rightColumnContent{
+            	text-align: left;
+        	}
+			.calloutLCol{
+            	text-align: center;
+        	}
+			.calloutRCol{
+            	text-align: left;
+        	}
+			.eNewBorder{
+				border: none;
+			}
+			.show-on-mobile {
+				display: none!important;
+			}
+			.hide-on-mobile {
+				display: block;
+			}
+			.showdesktop {
+				display: none!important;
+			}
+			.noshowmobile {
+				display: block;
+			}
+			.footer-social-icons {
+				text-align: right;
+				padding-right: 25px; 
+			}
+			.footer-specific-logos {
+				text-align: right;
+				padding-right: 25px;
+			}
+	
+    		@media only screen and (max-width: 480px) {
+        		#templateColumns{
+            		width: 100% !important;
+        		}
+        		.templateColumnContainer{
+            		display: block !important;
+            		width: 100% !important;
+        		}
+             	.calloutcolumns {
+                	display: block !important;
+                	width: auto !important; 
+            	}
+        		.columnImage{
+            		height: auto !important;
+            		max-width: 480px !important;
+            		width: 100% !important;
+        		}
+        		.leftColumnContent{
+					text-align: center;
+        		}
+        		.rightColumnContent{
+          			text-align: center;
+        		}
+				.calloutLCol{
+					padding-top: 10px !important;
+					text-align: center !important;
+				}
+				.calloutRCol{
+            		text-align: center !important;
+					padding: 0 30px;
+        		}
+				.eNewBorder{
+					border: none !important;
+				}
+				*[class~=hide_on_mobile] {
+					display: none !important;
+				}
+				*[class~=show_on_mobile] {
+					display: block !important;
+					width: auto !important;
+					max-height: inherit !important;
+					overflow: visible !important;
+					float: none !important;
+				}
+				 *[class="hide"]{
+                	display: none !important;
+                    width: 0 !important;
+                    height: 0 !important;
+                    padding: 0 !important;
+                    font-size: 0 !important;
+                    line-height: 0 !important;
+                }
+                .header-mobile{
+                	line-height: 38px !important;
+                  	font-size: 40px !important;
+                }
+                .callout-mobile {
+                	font-size: 30px !important;
+				}
+				.flexibleContainer {
+					width: 100% !important;
+					max-width: none;
+					text-align: center;
+					margin-left: auto !important;
+					margin-right: auto !important;
+				}
+				.show-on-mobile {
+					display: block !important;
+				}
+				.hide-on-mobile {
+					display: none !important;
+				}
+				.mobile-button {
+					/*width: 100% !important; */
+					/*max-width: none !important;*/
+					text-align: center !important;
+					margin: auto !important;
+					/*padding-left: 25% !important;*/
+					/*padding-right: 25% !important;*/
+					/*display: block !important;*/
+				}
+				.footer-social-icons {
+					text-align: center !important;
+				}
+				.footer-specific-logos {
+					text-align: center !important;
+				}
+    		}
+		</style>
+		<style type="text/css">            
+  			@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    			.hidden {
+      				display: none !important;
+      				width: 0 !important;
+    			}
+	  			.header1 {
+		  			font-size: .8em;
+	 	 		}
+	  			.header2 {
+		  			font-size: .6em;
+	  			}
+    			.widthMobile {
+      				width: 100% !important;
+      				max-width: 480px !important;
+    			}
+    			.widthFull {
+      				width: 100% !important;
+    			}
+    			.photo {
+      				width: 100% !important;
+      				height: auto !important;
+					max-width: 600px !important;
+    			}
+    			.button {
+      				width: 175px !important;
+    			}
+    			.icon {
+      				padding: 0 !important;
+    			}
+    			body {
+      				min-width: 100% !important;
+      				width: 100% !important;
+      				height: 100% !important;
+     				margin: 0 !important;
+      				padding: 0 !important;
+    			}
+    			.donatebutton {
+      				width: 100% !important;
+    			}
+				.show-on-mobile {
+					display: block !important;
+				}
+				.hide-on-mobile {
+					display: none !important;
+				}
+  			}	
+		</style>
+	
+	<!--[if gte mso 9]><xml>
+   	<o:OfficeDocumentSettings>
+    <o:AllowPNG></o:AllowPNG>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+   	</o:OfficeDocumentSettings>
+  	</xml><![endif]-->
+	
+</head>
+
+<body style="margin: 0; padding: 0; width: 100% !important; background-color: #D1D3D4;">
+	
+<div align="center">
+	<table role="presentation" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="widthMobile" style="max-width: 600px !important;" width="600">
+		<tbody>
+			<tr><td style="padding: 0 0 0 0;" align="center" valign="top">
+				<table role="presentation" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr><td style="font-family: 'open-sans', san-serif; font-size: 33px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0;" align="center" valign="bottom">
+							<table role="presentation" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody>
+							
+								<!-- Visually Hidden Preheader Text : START -->
+									<div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;" align="center">Your neighbors are counting on you.</div> 
+								<!-- Visually Hidden Preheader Text : END -->
+								
+							<!-- Line Break START-->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+									
+		<tr><td class="paragraph" style="font-family: Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 20px 30px;" align="left" valign="top">
+			Dear [[FIRSTNAME or "Friend"]], 
+			<br><br>The <strong>2022 Fill the Fridge Campaign</strong> is almost over, so I wanted to make sure you saw this before time runs out. 
+			<br><br>As I mentioned in my previous email, many of your neighbors are still feeling the effects of the pandemic &mdash; two years after it first began. Their pantries and refrigerators are empty, and they&rsquo;re counting on Feeding America Eastern Wisconsin to get the nutritious food they need. 
+			<br><br>That&rsquo;s why <a href="#" style="text-decoration: underline; font-weight: bold; color: #e98300;">we&rsquo;re counting on your 2022 Fill the Fridge gift today</a>. Thank you!
+			<br><br>&mdash; Scott
+		</td></tr>		
+									
+		<tr><td class="paragraph" style="font-family: Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 20px 30px;" align="center" valign="top">
+			---------------------------------------------------------------
+		</td></tr>								
+									
+							<!-- Line Break START-->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->			
+												
+	<!-- 2 Column - Logo and Button START -->
+	<tr><td align="center" valign="top">
+		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top">
+			<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer"><tr><td valign="top" width="100%" style="padding: 5px 15px;">
+				<tr><td valign="top" width="100%" style="padding: 5px 15px;">
+					<table role="presentation" align="Left" border="0" cellpadding="0" cellspacing="0" width="350" class="flexibleContainer"><tr><td valign="top" style="padding-bottom: 0px;">
+						<a href="https://www.feedingamericawi.org/"><img src="https://files.constantcontact.com/83fe00a5701/6a0ebad5-9857-477f-9d39-4063bf76a46b.png" width="124" class="" alt="Feeding America Eastern Wisconsin" style="max-width: 124px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; height: auto;"></a>
+						<a href="https://feedingamericawi.org/about-us/"><img id="40th Anniversary Logo" alt="40th Anniversary Logo" border="0" src="https://files.constantcontact.com/83fe00a5701/c2ba8e8e-6944-4fcf-8049-2d031764d884.png" width="80" height="auto" style="padding-top: 10px; padding-right: 5%; width: 80px; max-width: 80px;"/></a>
+					</td></tr></table>
+					<table role="presentation" align="Right" border="0" cellpadding="10" cellspacing="0" width="150" class="flexibleContainer"><tr><td valign="top">
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="150" class="emailButton mobile-button" style="border-collapse: separate; background-color: #e98300; border-radius: 3px; cursor: auto;"><tr><td align="center" valign="middle" style="font-family: 'open-sans', sans-serif; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: none; padding: 20px 25px; white-space: nowrap;">
+							<a href="#" target="_blank" style="color: #FFFFFF; text-decoration: none; display: block; width: auto; text-transform: uppercase; white-space: nowrap;">Donate</a>
+						</td></tr></table>
+					</td></tr></table>
+				</td></tr>
+			</td></tr></table>
+		</td></tr></table>
+	</td></tr>								
+	<!-- 2 Column - Logo and Button END -->
+												
+							<!-- Line Break START -->
+								<tr><td height="25" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+									
+	<!-- Header Image START -->
+		<tr bgcolor="#ffffff"><td style="font-family: 'Open-sans', sans-serif; font-size: 12pt; color: #000000; padding: 0px; margin: 0px; border-spacing: 0; text-align: center;" align="center" valign="top">
+			<a href="#"><img alt="Girl with a can of food" border="0" class="photo" src="https://files.constantcontact.com/83fe00a5701/f8a311dd-dc6b-43f3-914e-59431467d239.jpg" style="display: block; margin: 0 auto; border: 0;" width="100%" /></a>
+		</td></tr>
+	<!-- Header Image END -->
+												
+							<!-- Line Break START -->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+												
+		<tr><td style="font-family: 'Open-sans', sans-serif; font-size: 26px; mso-line-height-rule: exactly; line-height: normal; color: #53682b; padding: 0px 35px; font-weight: bold; text-align: center;" align="center" valign="top">
+			<span class="header1">Fill the Fridge for Your Neighbors!</span>
+		</td></tr>
+												
+							<!-- Line Break START -->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+			
+		<tr><td class="paragraph" style="font-family: Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 20px 30px;" align="left" valign="top">
+			Dear [[FIRSTNAME or "Friend"]], 
+			<br><br>Hunger was a problem in Wisconsin communities before COVID-19 hit two years ago, and it&rsquo;s only gotten worse as we continue to feel the effects of the pandemic. 
+			<br><br><a href="#" style="text-decoration: underline; font-weight: bold; color: #e98300;">We need your help to fill the fridges with nutritious food for Wisconsin families and seniors facing hunger</a><span style="font-weight: bold; color: #e98300;">.</span>
+			<br><br>Too many of our neighbors are looking at empty cabinets and refrigerators and wondering how they&rsquo;ll feed their families.
+		</td></tr>																	
+												
+	<!-- Responsive Callout START -->					
+		<tr bgcolor="#ffffff"><td style="font-family: 'Open-sans', sans-serif; font-size: 12pt; color: #000000; padding: 0px; margin: 0px; border-spacing: 0; text-align: center; max-width: 600px;" align="center" valign="top" width="600">
+			<a href="#"><img alt="Items Most Needed" border="0" class="photo" src="https://files.constantcontact.com/83fe00a5701/18a6f520-e42d-407a-a825-74ec2f86a693.gif?rdr=true" style="display: block; margin: 0 auto; border: 0; max-width: 600px; height: auto; width: 100%;" width="600" /></a>
+		</td></tr>							
+	<!-- Responsive Callout END -->	
+												
+		<tr><td class="paragraph" style="font-family: Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 20px 30px;" align="left" valign="top">
+			I&rsquo;m writing now to ask you to be part of our <strong>2022 Fill the Fridge Campaign</strong>. We need your help to fill neighbors' fridges and provide meals for families and seniors facing hunger in Wisconsin. <a href="#" style="text-decoration: underline; font-weight: bold; color: #e98300;">Every $1 you give provides $10 worth of groceries</a><span style="font-weight: bold; color: #e98300;">.</span>
+			<br><br>We&rsquo;re counting on you. Thank you!
+			<br><br>With deepest gratitude,
+		</td></tr>
+	
+	<!-- Signoff/Signature START -->
+		<tr><td class="paragraph" style="font-family: Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: auto; color: #4A4A4A; padding: 0px 30px 20px 30px;" align="left" valign="top">
+			<img alt="Signature Signoff" border="0" src="https://files.constantcontact.com/4f07be38001/e721dea5-c754-47e9-b25e-18d8bec0cd42.png" width="175" />
+			<br>
+			Scott Marshall
+			<br>Vice President of Development and Communications
+		</td></tr>					
+	<!-- Signoff/Signature END -->														
+											
+							<!-- Line Break START -->
+								<tr><td height="35" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #ffffff;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+											
+	<!-- Full Width Button START -->
+			<tr><td style="margin: 0 auto; font-family: 'open-sans', sans-serif;  border-collapse: collapse; font-size: 10px; color: #ffffff; background-color: #e98300; text-align: center; text-decoration: none; padding: 0" bgcolor="#e98300">
+				<table role="presentation"  align="center" border="0" cellspacing="0" cellpadding="0"><tr style="background-color: #e98300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;" bgcolor="#e98300"><td style="background-color: #e98300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;" bgcolor="#e98300">
+					<a href="#" target="_blank" style="font-size: 16px; font-weight: bold; font-family: 'open-sans', sans-serif; color: #ffffff; text-decoration: none; border-radius: 3px; background-color: #e98300; border-top: 12px solid #e98300; border-bottom: 12px solid #e98300; border-right: 12px solid #e98300; border-left: 12px solid #e98300; display: inline-block; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 5px 30px; white-space: nowrap; line-height: 120%; text-transform: uppercase; white-space: nowrap;"><strong>Give Now</strong></a>
+				</td></tr></table>
+			</td></tr>
+	<!-- Full Width Button END --> 
+											
+<!-- Footer START -->											
+							<!-- Line Break START -->
+							<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #222222;">&nbsp;</td></tr>
+							<!-- Line Break END-->	
+
+	<tr><td align="center" valign="top">
+		<table role="presentation"  bgcolor="#222222" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr><td style="font-family: 'open-sans', sans-serif; font-size: 24px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0; padding: 15px 0px 15px 0px;" id="dark-grey-block" align="center" valign="bottom" bgcolor="#222222">
+					<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsfooter1" \>
+						<!-- Desktop Version START -->
+						<tr class="hide_on_mobile">
+							<td align="center" valign="middle" width="60%" class="templateColumnContainer">
+								<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" height="auto">
+									<tbody>
+										<tr><td>
+											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="250" class="flexibleContainer">
+												<tbody>
+													<tr><td valign="top" style="padding-bottom: 0px; padding-left: 5%;">
+														<a href="https://www.feedingamericawi.org/"><img src="https://files.constantcontact.com/83fe00a5701/6a0ebad5-9857-477f-9d39-4063bf76a46b.png" width="124" class="" alt="Feeding America Eastern Wisconsin" style="max-width: 124px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; height: auto;padding: 10px 30px 20px 30px;"></a>
+															<table align="center">
+																<tbody>
+																	<tr><td class="calloutLCol" style="font-family: Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 20px; color: #ffffff; padding: 10px 30px 20px 30px; text-align: left; white-space: nowrap;" align="center" valign="top">
+																		<strong>Milwaukee</strong>
+																		<br>1700 W. Fond du Lac Avenue
+																		<br>Milwaukee, WI 53205
+																		<br><br>
+																		<strong>Appleton</strong>
+																		<br>2911 W. Evergreen Drive
+																		<br>Appleton, WI 54913
+																	</td></tr>
+																</tbody>
+															</table>
+													</td></tr>
+												</tbody>
+											</table>
+										</td></tr>
+									</tbody>	
+								</table>
+							</td>
+							<td align="center" valign="top" width="40%" class="templateColumnContainer">
+								<table role="presentation"  border="0" cellpadding="5" cellspacing="0" width="100%">
+									<tr><td class="hide" width="0"></td>  
+										<td class="calloutRCol footer-specific-logos" style="margin-top:0px; padding-right: 50px;" valign="middle">
+											<img id="Map-of-Wisconsin" alt="Map of Wisconsin" border="0" src="https://files.constantcontact.com/83fe00a5701/e6be9e56-80e5-462b-afb7-042d9ee3c7f0.png" width="135" height="171" style="padding-top: 10px; padding-right: 5%; width: auto;"/>
+												<table role="presentation" align="Right" border="0" cellpadding="0" cellspacing="0" width="150" class="flexibleContainer">
+													<tr><td valign="top">
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="150" class="emailButton mobile-button" style="border-collapse: separate; background-color: #e98300; border-radius: 3px; cursor: auto;"><tr><td align="center" valign="middle" style="font-family: 'open-sans', sans-serif; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: uppercase; padding: 15px 30px; white-space: nowrap;">
+															<a href="#" target="_blank" style="color: #FFFFFF; text-decoration: none; display: block; white-space: nowrap;">Donate</a>
+														</td></tr></table>
+													</td></tr>
+												</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>		
+						<!-- Desktop Version END -->
+
+						<!-- Mobile Version START -->		
+							<!-- start HIDDEN_PREVIEW_TEXT -->
+							<!--[if !mso]><! -->
+							<tr class="show_on_mobile outlookhide x_hideoutlookweb mobilecontent" style="display: none; mso-hide:all;">
+								<td align="left" valign="middle" width="100%" class="templateColumnContainer">
+									<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" height="auto">
+										<tbody>
+											<tr><td>
+												<table role="presentation" align="Left" border="0" cellpadding="0" cellspacing="0" width="250" class="flexibleContainer">
+													<tbody>
+														<tr><td valign="top" style="padding-bottom: 0px; padding-left: 5%;">
+															<a href="https://www.feedingamericawi.org/"><img src="https://files.constantcontact.com/83fe00a5701/6a0ebad5-9857-477f-9d39-4063bf76a46b.png" width="200" class="" alt="Feeding America Eastern Wisconsin" style="max-width: 200px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; height: auto;"></a>
+														</td></tr>
+													</tbody>
+												</table>
+											</td></tr>
+										</tbody>
+									</table>
+								</td>	
+									<td height="25" align="center" valign="top" width="100%" class="templateColumnContainer" style="line-height:25px;">&nbsp;</td>
+								<td align="center" valign="top" width="100%" class="templateColumnContainer">
+									<table role="presentation"  border="0" cellpadding="5" cellspacing="0" width="100%">
+										<tr><td class="hide" width="0"></td> 
+											<td class="calloutRCol footer-specific-logos" style="margin-top:0px;" valign="middle">
+												<img id="Map-of-Wisconsin-mobile" alt="Map of Wisconsin" border="0" src="https://files.constantcontact.com/83fe00a5701/e6be9e56-80e5-462b-afb7-042d9ee3c7f0.png" width="135" height="171" style="padding-top: 10px; padding-right: 5%; width: auto;"/>
+													<table role="presentation" align="Right" border="0" cellpadding="0" cellspacing="0" width="150" class="flexibleContainer">
+														<tr><td valign="top">
+															<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="150" class="emailButton mobile-button" style="border-collapse: separate; background-color: #e98300; border-radius: 3px; cursor: auto;"><tr><td align="center" valign="middle" style="font-family: 'open-sans', sans-serif; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: uppercase; padding: 15px 30px; white-space: nowrap;">
+																<a href="#" target="_blank" style="color: #FFFFFF; text-decoration: none; display: block; white-space: nowrap;">Donate</a>
+															</td></tr></table>
+														</td></tr>
+															<td height="25" align="center" valign="top" width="100%" class="templateColumnContainer" style="line-height:25px;">&nbsp;</td>
+														<td align="center" valign="top" width="100%" class="templateColumnContainer">
+															<table role="presentation">
+																<tbody>
+																	<tr><td class="calloutLCol" style="font-family: Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 20px; color: #ffffff; padding: 10px 30px 20px 30px; text-align: left; white-space: nowrap;" align="left" valign="top">	
+																		<strong>Milwaukee</strong>
+																		<br>1700 W. Fond du Lac Avenue
+																		<br>Milwaukee, WI 53205
+																		<br><br>
+																		<strong>Appleton</strong>
+																		<br>2911 W. Evergreen Drive
+																		<br>Appleton, WI 54913
+																	</td></tr>
+																</tbody>
+															</table>
+														</td>
+													</table>
+											</td>
+										</tr>
+									</table>
+								</td>	
+							</tr>
+							<!--<![endif]-->
+							<!-- end HIDDEN_PREVIEW_TEXT -->
+							<!-- Mobile Version END -->	
+
+					</table>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>
+								
+							<!-- Line Break START -->						
+							<tr><td height="30" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #222222;">&nbsp;</td></tr>
+							<!-- Line Break END-->
+			
+	<table role="presentation" class="subfooter" bgcolor="#111111" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody>
+			<tr><td style="font-family: 'open-sans', sans-serif; font-size: 24px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0; padding: 10px 0px 10px 0px;" id="dark-black-block" align="left" valign="bottom" bgcolor="#111111">
+				<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsfooter3" \>
+					<tr>
+						<td align="left" valign="middle" width="50%" class="templateColumnContainer">
+							<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" height="15px"><tr><td class="calloutLCol" style="font-family: Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 20px; color: #666666; padding: 0px 30px 0px 30px; text-align: left;" align="left" valign="middle">
+								&#169; 2022 Feeding America Eastern Wisconsin.
+							</td></tr></table>
+						</td>
+						<td align="right" valign="middle" width="50%" class="templateColumnContainer">
+							<table role="presentation"  border="0" cellpadding="5" cellspacing="0" width="100%" height="15px">
+								<tr><td class="hide" width="0"></td>
+									<td class="calloutRCol footer-social-icons" style="margin-top:0px;" align="right" valign="middle">
+										<a href="https://www.facebook.com/FeedingAmericaEasternWisconsin/"><img src="https://files.constantcontact.com/4f07be38001/f0743446-773e-47e6-9980-ebf9973af2d4.png" alt="facebook" style="margin: 0 0px; padding: 0 0px;" /></a> 
+										<a href="https://www.youtube.com/channel/UCGniHhZ7WdJYE8yRttyOIKQ"><img src="https://files.constantcontact.com/4f07be38001/a719dddd-f7a1-4744-b562-969ad8dbac16.png" alt="youtube" style="margin: 0 0px; padding: 0 0px;" /></a> 
+										<a href="https://twitter.com/FeedAmericaWI"><img src="https://files.constantcontact.com/4f07be38001/84cfc12f-0126-4522-92b9-944468ce1eb9.png" alt="twitter" style="margin: 0 0px; padding: 0 0px;" /></a> 
+										<a href="https://www.instagram.com/feedamericawi"><img src="https://files.constantcontact.com/4f07be38001/27d00637-ca43-4fb7-958f-43148324522b.png" alt="instagram" style="margin: 0 0px; padding: 0 0px;" /></a> 
+										<a href="https://www.linkedin.com/company/feeding-america-eastern-wisconsin"><img src="https://files.constantcontact.com/4f07be38001/a32adc65-c91b-4b8e-9ee3-4f0158102a89.png" alt="linkedin" style="margin: 0 0px; padding: 0 0px;" /></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td></tr>
+		</tbody>
+	</table>							
+<!-- Footer END -->		
+					
+								</tbody>
+							</table>	
+						</td></tr>
+					</tbody>			
+				</table>		
+			</td></tr>
+		</tbody>				
+	</table>	
+</div>
+	
+<!-- Tracking Code START -->
+
+		<style data-ignore-inlining>@media (prefers-color-scheme: dark) { #_t::before {content:url('https://eyetijrn.emltrk.com/v2/eyetijrn?rd&i=$ContactID$');}} @media (prefers-color-scheme: light) { #_t::before {content:url('https://eyetijrn.emltrk.com/v2/eyetijrn?rl&i=$ContactID$');}} @media print{ #_t {background-image:url('https://eyetijrn.emltrk.com/v2/eyetijrn?p&i=$ContactID$');}} div.OutlookMessageHeader {background-image:url('https://eyetijrn.emltrk.com/v2/eyetijrn?f&i=$ContactID$')} table.moz-email-headers-table {background-image:url('https://eyetijrn.emltrk.com/v2/eyetijrn?f&i=$ContactID$')} blockquote #_t {background-image:url('https://eyetijrn.emltrk.com/v2/eyetijrn?f&i=$ContactID$')} #MailContainerBody #_t {background-image:url('https://eyetijrn.emltrk.com/v2/eyetijrn?f&i=$ContactID$')}</style><div id="_t"></div>
+<img src="https://eyetijrn.emltrk.com/v2/eyetijrn?i=$ContactID$" width="1" height="1" border="0" alt="" />	
+
+<!-- Tracking Code END -->
+	
+</body>
+</html>
