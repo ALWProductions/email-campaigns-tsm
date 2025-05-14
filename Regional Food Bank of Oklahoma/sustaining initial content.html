@@ -1,0 +1,56 @@
+Dear <convio:session name="1" param="first_name"></convio:session>,<br><br>
+<convio:choose>
+  <convio:when title="Is a tribute" test="eq" selected="selected">
+    <convio:op><convio:session name="120" param="dc:isTributeDonation"></convio:session></convio:op>
+    <convio:op>true</convio:op>
+    <convio:then>Thank you for accepting my invitation to join <strong>Friends at the Table</strong>, and for giving your first <strong>Friends at the Table</strong> gift in the name of <convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:honoreeName"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:honoreeName"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty">&nbsp;</convio:otherwise>
+</convio:choose>. We&rsquo;re so happy to have you as part of this special team. Your generosity is already hard at work helping your Oklahoma neighbors facing hunger. Now that generosity will stretch even further as part of <strong>Friends at the Table</strong>.
+<br><br>We have recorded your preferences for how much you wish to give, and how often. I will send you emails like this one to let you know when future gifts have been charged. If you want to make any changes to your <strong>Friends at the Table</strong> arrangements, now or in the future, please contact Regional Food Bank of Oklahoma at 405-972-1111 or visit your <a href="https://secure3.convio.net/rfbo/site/SPageNavigator/GiftServiceCenter.html">Gift Service Center</a> page. Thank you again!<br><br>With gratitude,<br>
+<img src="../images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>
+Stacy Dykstra, Ph.D.<br>CEO<br><br>
+</convio:then>
+  </convio:when>
+  <convio:when title="Is a memorial" test="eq">
+    <convio:op><convio:session name="120" param="dc:isMemorialDonation"></convio:session></convio:op>
+    <convio:op>true</convio:op>
+    <convio:then>Thank you for accepting my invitation to join <strong>Friends at the Table</strong>, and for giving your first <strong>Friends at the Table</strong> gift in the name of  <convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:then><convio:session name="120" param="dc:honoreeName"></convio:session></convio:then>
+  </convio:when>
+</convio:choose>. We&rsquo;re so happy to have you as part of this special team. Your generosity is already hard at work helping your Oklahoma neighbors facing hunger. Now that generosity will stretch even further as part of <strong>Friends at the Table</strong>.<br><br>We have recorded your preferences for how much you wish to give, and how often. I will send you emails like this one to let you know when future gifts have been charged. If you want to make any changes to your <strong>Friends at the Table</strong> arrangements, now or in the future, please contact Regional Food Bank of Oklahoma at 405-972-1111 or visit your <a href="https://secure3.convio.net/rfbo/site/SPageNavigator/GiftServiceCenter.html">Gift Service Center</a> page. Thank you again!<br><br>With gratitude,<br><br><img src="../images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>
+Stacy Dykstra, Ph.D.<br />CEO<br><br>
+</convio:then>
+  </convio:when>
+  <convio:otherwise title="Is not a tribute or memorial">
+Thank you for accepting my invitation to join <strong>Friends at the Table</strong>, and for giving your first <strong>Friends at the Table</strong> gift of <convio:choose> 
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:giftAmount"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:giftAmount"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty"></convio:otherwise>
+</convio:choose>. We&rsquo;re so happy to have you as part of this special team. Your generosity is already hard at work helping your Oklahoma neighbors facing hunger. Now that generosity will stretch even further as part of <strong>Friends at the Table</strong>.<br><br>We have recorded your preferences for how much you wish to give, and how often. I will send you emails like this one to let you know when future gifts have been charged. If you want to make any changes to your <strong>Friends at the Table</strong> arrangements, now or in the future, please contact Regional Food Bank of Oklahoma at 405-972-1111 or visit your <a href="https://secure3.convio.net/rfbo/site/SPageNavigator/GiftServiceCenter.html">Gift Service Center</a> page. Thank you again!<br><br>With gratitude,<br><br>
+<img src="../images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>Stacy Dykstra, Ph.D.<br />CEO<br><br>
+</convio:otherwise>
+</convio:choose>
+
+
+Please print or save this message for your personal records.<br><br>The donor has not received any substantial return benefit for this gift, and thus the gift is tax-deductible to the extent allowed by law. Regional Food Bank of Oklahoma is a 501(c)(3) non-profit organization. Our Federal Identification Number is 73-1100380.
+<p>&nbsp;</p>
+<table style="width: 90%;" border="0">
+<tbody>
+   
+<tr>
+<td class="FormSectionHeader" >YOUR DONATION RECEIPT<br>
+
+<convio:session name="9" param="default"></convio:session>
+</td>
+</tr>
+
+</tbody>
+</table>
+<convio:session name="120" param="dc:transactionSummary"></convio:session>

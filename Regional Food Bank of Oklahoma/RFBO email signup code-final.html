@@ -1,0 +1,82 @@
+<span class="form_text">Sign up to receive email updates. <br>
+All fields are required.</span>
+
+<form name="survey_1162" id="survey_1162" method="POST" action="https://secure3.convio.net/rfbo/site/SSurvey?NEXTURL=https://www.regionalfoodbank.org/" >
+<fieldset>
+<input type="hidden" name="cons_info_component" id="cons_info_component" value="t" />
+<input type="hidden" id="select_an_address" value="Select an address"/>
+<input type="text" name="cons_first_name" id="cons_first_name" value="" maxlength="50" placeholder="First Name" />
+<input type="text" name="cons_last_name" id="cons_last_name" value="" maxlength="50" placeholder="Last Name" />
+<input type="email" name="cons_email" id="cons_email" value="" maxlength="255" placeholder="Email" />
+</fieldset>
+<input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="Submit" class="Button" />
+    
+<span class="success_message success_message_hide"><img href="https://secure3.convio.net/rfbo/images/content/pagebuilder/check-37583_20.png"></span>
+    
+<input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="1162" />
+<input type="hidden" name="USER_HAS_TAKEN" id="USER_HAS_TAKEN" value="null" />
+<input type="hidden" name="SURVEY_IGNORE_ERRORS" id="SURVEY_IGNORE_ERRORS" value="TRUE" />
+<input type="hidden" name="QUESTION_STAG_APP_ID" id="QUESTION_STAG_APP_ID" value="" />
+<input type="hidden" name="QUESTION_STAG_APP_REF_ID" id="QUESTION_STAG_APP_REF_ID" value="" />
+<input type="hidden" name="QUESTION_STAG_CTX_TYPE" id="QUESTION_STAG_CTX_TYPE" value="" /> 
+<input type="hidden" name="ERRORURL" id="ERRORURL" value="https://www.regionalfoodbank.org/" />
+</form>
+<span class="form_text">After submitting your information, you will be redirected to our homepage.</span>
+
+<style>
+    
+    span.success_message img {
+         width:20px; 
+        height:20px;
+    }
+    span.success_message_hide {
+        display:none;
+              
+    }
+
+    span.success_message_show {
+        display:inline-block;
+        position:absolute;
+        margin-left:5px;
+       
+       
+    }
+    
+    .errorflag {
+        background-color: rgba(240, 52, 52, 0.3);
+    }
+</style>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        
+        
+    $('#survey_1162 input[type="text"]').blur(function(){
+        if(!$(this).val()){
+            $(this).addClass("errorflag");
+        } else{
+            $(this).removeClass("errorflag");
+        }
+    });
+
+    $('#survey_1162 input[type="email"]').blur(function(){
+        if(!$(this).val()){
+            $(this).addClass("errorflag");
+        } else{
+            $(this).removeClass("errorflag");
+        }
+    });
+        
+  $('#ACTION_SUBMIT_SURVEY_RESPONSE').click(function() {
+  $(".success_message").removeClass("success_message_hide");
+$(".success_message").addeClass("success_message_show");
+ $(".success_message").delay(3000).fadeOut(1000); // change  to number of seconds in milliseconds 
+    
+});
+        
+});
+    
+
+ 
+</script>

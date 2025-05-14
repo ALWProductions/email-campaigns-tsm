@@ -1,0 +1,47 @@
+Dear <convio:session name="120" param="dc:firstName"></convio:session>,<br><br>
+<convio:choose>
+  <convio:when title="Is a tribute" test="eq" selected="selected">
+    <convio:op> <convio:session name="120" param="dc:isTributeDonation"></convio:session> </convio:op>
+    <convio:op>true</convio:op>
+    <convio:then>Thank you for your tribute gift made in the name of <convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:honoreeName"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:honoreeName"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty">&nbsp;</convio:otherwise>
+</convio:choose>. When you give to the Regional Food Bank of Oklahoma, you are providing meals for so many people around central and western Oklahoma who live with hunger every day. Whether it&rsquo;s seniors whose fixed incomes just can&rsquo;t stretch until the end of the month, or working families trying to put food on the table for their children, they look to the Regional Food Bank for help&nbsp;&hellip; and we look to you!
+<br><br>That&rsquo;s why your gift makes such a difference in our community. On behalf of everyone you&rsquo;re helping, thank you again for your partnership, your compassion and your generosity.<br><br>If you have any questions or concerns about your donation, please feel free to <a href="mailto:info@rfbo.org">contact us</a>.
+<br><br>With gratitude,<br /><br><img src="https://secure3.convio.net/rfbo/images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>Stacy Dykstra, Ph.D.<br />CEO<br><br>
+</convio:then>
+  </convio:when>
+  <convio:when title="Is a memorial" test="eq">
+    <convio:op> <convio:session name="120" param="dc:isMemorialDonation"></convio:session> </convio:op>
+    <convio:op>true</convio:op>
+    <convio:then>Thank you for your memorial gift made in the name of&nbsp; <convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:then><convio:session name="120" param="dc:honoreeName"></convio:session></convio:then>
+  </convio:when>
+</convio:choose>. We appreciate your generosity and your commitment to helping families get the nutritious food they need.
+<br><br>That&rsquo;s why your gift makes such a difference in our community. On behalf of everyone you&rsquo;re helping, thank you again for your partnership, your compassion and your generosity.<br><br>If you have any questions or concerns about your donation, please feel free to&nbsp;<a title="E-mail dburroughs@regionalfoodbank.org" href="mailto:dburroughs@regionalfoodbank.org">contact us</a>.<br><br>With gratitude,<br /><br><br><img src="https://secure3.convio.net/rfbo/images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br><br>Stacy Dykstra, Ph.D.<br />CEO<br><br>
+</convio:then>
+  </convio:when>
+  <convio:otherwise title="Is not a tribute or memorial">
+Thank you for your gift of <convio:choose>
+  <convio:when title="Not empty" test="nempty" selected="selected">
+    <convio:op><convio:session name="120" param="dc:giftAmount"></convio:session></convio:op>
+    <convio:then><convio:session name="120" param="dc:giftAmount"></convio:session></convio:then>
+  </convio:when>
+  <convio:otherwise title="Empty">&nbsp;</convio:otherwise>
+</convio:choose>! When you give to Regional Food Bank of Oklahoma, you are providing meals for so many people around central and western Oklahoma who live with hunger. Whether it&rsquo;s seniors whose fixed incomes just can&rsquo;t stretch until the end of the month, or working families trying to put food on the table for their kids, they look to the Regional Food Bank for help&nbsp;&hellip; and we look to you!<br><br>That&rsquo;s why your gift makes such a difference in our community. On behalf of everyone you&rsquo;re helping, thank you again for your partnership, your compassion and your generosity.<br><br>With gratitude,<br><img src="https://secure3.convio.net/rfbo/images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>Stacy Dykstra, Ph.D.<br />CEO<br><br>
+</convio:otherwise>
+</convio:choose>
+Please print or save this message for your personal records.<br><br>The donor has not received any substantial return benefit for this gift, and thus the gift is tax-deductible to the extent allowed by law. The Regional Food Bank of Oklahoma is a 501(c)(3) non-profit organization. Our Federal Identification Number is 73-1100380.<br><br>
+<table style="width: 90%;" border="0">
+<tbody>
+<tr>
+<td class="FormSectionHeader">YOUR DONATION RECEIPT<br>
+    <convio:session name="9" param="default"></convio:session></td>
+</tr>
+</tbody>
+</table>
+<convio:session name="120" param="dc:transactionSummary"></convio:session>

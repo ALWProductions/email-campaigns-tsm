@@ -1,0 +1,99 @@
+<style type="text/css"><!--
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  text-transform: none;
+}
+
+p, #receiptContainer span, label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+#receiptContainer span.title { font-weight: 700; }
+
+#transReceipt {
+  margin-top: 36px;
+  border-top: 9px solid #f0f0f0;
+}
+
+#transReceipt p, #transReceipt span { font-size: 14px; }
+
+#tsm--ps-wrapper {
+  overflow: auto;
+}
+
+#tsm--ps-wrapper img {
+  width: 25%;
+  max-width: 320px;
+  float: left;
+  padding: 24px 18px 18px 0;
+}
+
+#tsm--ps-wrapper img + p {
+  padding-top: 1px;
+}
+
+
+@media screen and (max-width: 480px) {
+#tsm--ps-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  float: none;
+  margin: 0 auto;
+  padding: 24px 0 6px 0;
+}
+
+#tsm--ps-wrapper img + p {
+  padding-top: 0;
+}
+
+}
+--></style>
+<h1>Thank you for helping your neighbors!</h1>
+<p>You&rsquo;re a hero! The gift you just gave to Regional Food Bank of Oklahoma will provide nutritious meals for people in our community who are struggling with hunger. They thank you, and so do I!</p>
+<p>I deeply appreciate your partnership with the Regional Food Bank. Thank you for being part of our online community, and for all you do to make our state a better, healthier place.</p>
+<p>With gratitude,</p>
+<p>Stacy Dykstra<br />CEO</p>
+<div id="transReceipt" class="row">
+<div>
+<div class="row">
+<div>
+<h2 class="text-center">Your Donation Receipt</h2>
+<div id="receiptContainer">
+<div><a id="printIcon" onclick="window.print();return false;" href="#"></a>
+<p><span class="title">Trans. ID#:</span> <span><convio:session name="120" param="dc:transactionID"></convio:session></span></p>
+<p><span class="title">Name:</span> <span><convio:session name="120" param="dc:name"></convio:session></span></p>
+<p><span class="title">Address:</span> <span><convio:session name="120" param="dc:donorAddress"></convio:session></span></p>
+<p><span class="title">Amount:</span> <span><convio:session name="120" param="dc:giftAmount"></convio:session></span></p>
+<p><span class="title">Date:</span> <span><convio:session name="120" param="dc:transactionDate"></convio:session></span></p>
+<p><span class="title">Card Type:</span> <span><convio:session name="120" param="dc:creditCardType"></convio:session> <convio:session name="120" param=" dc: creditCardNumber"></convio:session></span></p>
+</div>
+<hr />
+<div>
+<p>If you need to contact us regarding your donation, please use the details below to do so:</p>
+<p><strong>Phone: </strong>(405)&nbsp;972-1111<br /><strong>Email: </strong><a href="mailto:info@regionalfoodbank.org">info@regionalfoodbank.org</a><br /> <strong>Web: </strong><a href="http://www.regionalfoodbank.org/">regionalfoodbank.org</a></p>
+<p>Please note that your bank may temporarily record this donation as BB*NONPROFIT.</p>
+<p>No goods or services were provided by Regional Food Bank of Oklahoma in exchange for this donation. Regional Food Bank of Oklahoma is a registered 501(c)(3) non-profit. Your gift may be tax deductible.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

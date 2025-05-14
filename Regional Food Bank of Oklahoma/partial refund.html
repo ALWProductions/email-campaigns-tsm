@@ -1,0 +1,66 @@
+
+Dear [[S120:dc:firstName]],
+<br><br>
+We have processed your refund of <span id="giftRefundAmount"><convio:session name="120" param="dc:refundAmount"></convio:session></span> for the 
+<span id="giftOriginalTransAmount"><convio:session name="120" param="dc:originalTransAmount"></convio:session></span> gift you made recently.
+<br><br>
+<convio:choose>
+<convio:when test="eq">
+<convio:op>[[S120:dc:paymentMode]]</convio:op><convio:op>Check</convio:op>
+<convio:then>
+[[S120:dc:refundAmount]] was refunded to the bank account number you provided when you made this gift.
+</convio:then>
+</convio:when>
+<convio:when test="eq">
+<convio:op>[[S120:dc:paymentMode]]</convio:op><convio:op>Credit Card</convio:op>
+<convio:then>
+[[S120:dc:refundAmount]] was refunded to the credit card you used when you made this gift.
+</convio:then>
+</convio:when>
+<convio:otherwise>
+A [[?GB::[[S100:INTL_COUNTRY_ISO_CODE]]::cheque::check]] for [[S120:dc:refundAmount]] will be sent to you soon.
+</convio:otherwise>
+</convio:choose>
+<br><br>
+Your support is very important to us. Please check our website for other opportunities to support us.
+<br><br>With gratitude,<br><img src="../images/content/pagebuilder/StacyDykstra_Signature.png" border="0" alt="Stacy-CEO-Signature" width="250" height="94" /><br>Stacy Dykstra, Ph.D.<br />CEO<br><br>
+Please destroy the original donation receipt and print or save this message for your personal records.
+<br><br><strong>Donor Information </strong><br><br>
+Name: &nbsp;[[S120:dc:name]] <br />
+[[?GB::[[S100:INTL_COUNTRY_ISO_CODE]]::Address 1:&nbsp; <span id="addressStreet1">[[S120:dc:street1]]</span>[[?xxnullxx::x[[S120:dc:street2]]x::::
+<br />Address 2:&nbsp; <span id="addressStreet2">[[S120:dc:street2]]</span>]][[?xxnullxx::x[[S120:dc:street3]]x::::
+<br />Address 3:&nbsp; <span id="addressStreet3">[[S120:dc:street3]]</span>]]
+<br />Town:&nbsp; <span id="addressCityTown">[[S120:dc:city]]</span>[[?xxnullxx::x[[S120:dc:county]]x::::
+<br />County:&nbsp; <span id="addressCounty">[[S120:dc:county]]</span>]]
+<br />Postcode:&nbsp; <span id="addressZipPostcode">[[S120:dc:postalCode]]</span>[[?xxnullxx::x[[S120:dc:country]]x::::
+<br />Country:&nbsp; <span id="addressCountry">[[S120:dc:country]]</span>]]
+<br />
+::Street1:&nbsp; <span id="addressStreet1">[[S120:dc:street1]]</span>&nbsp;[[?xxnullxx::x[[S120:dc:street2]]x::::<span id="addressStreet2">[[S120:dc:street2]]</span>]]<br />
+City:&nbsp;<span id="addressCityTown">[[S120:dc:city]]</span><br />
+State:&nbsp;<span id="addressStateProv">[[S120:dc:stateProvince]]</span> <br />
+ZIP Code:&nbsp;<span id="addressZipPostcode">[[S120:dc:postalCode]]</span> <br />
+[[?xxnullxx::x[[S120:dc:country]]x::::
+Country:&nbsp;<span id="addressCountry">[[S120:dc:country]]</span> <br />
+]]]] 
+Email: &nbsp; [[S120:dc:email]] <br />
+[[?xxnullxx::x[[S120:dc:jointDonorName]]x::::
+Joint Donor Name: &nbsp;[[S120:dc:jointDonorName]] <br />
+]] 
+<br><br><strong>Transaction Information </strong><br><br>
+Adjusted Amount: &nbsp;<span id="giftAdjustedAmount">[[S120:dc:giftAmount]]</span> <br />
+Original Amount:&nbsp;[[S120:dc:originalTransAmount]] <br />
+Transaction Date:&nbsp;<span id="giftTransactionDate">[[S120:dc:transactionDate]]</span> <br />
+[[?GB::[[S100:INTL_COUNTRY_ISO_CODE]]::::[[?xFALSEx::x[[S120:dc:isOriginalTeamRaiser]]x::
+Tax Deductible Amount:&nbsp;<span id="giftTaxDeductibleValue">[[S120:dc:taxDeductibleValue]]</span> <br />
+::
+[[?x[[S120:dc:userId]]xxTRUEx::x[[S120:dc:originalProxyId]]xx[[E400:[[S120:dc:originalTeamRaiserId]]:F2F_DISABLE_SELF_DONATION_RECEIPTS:FALSE]]x::
+::
+Tax Deductible Amount:&nbsp;<span id="giftTaxDeductibleValue">[[S120:dc:taxDeductibleValue]]</span> <br />
+]]
+]]]]
+
+Transaction ID: &nbsp; [[S120:dc:transactionID]] <br />
+[[?GB::[[S100:INTL_COUNTRY_ISO_CODE]]::::[[?xxnullxx::x[[S120:dc:taxID]]x::::
+Tax Identification Number:&nbsp;[[S120:dc:taxID]] <br />
+]]]]
+

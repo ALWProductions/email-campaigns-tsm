@@ -1,0 +1,279 @@
+<style>
+    
+    .pagecontent ul, .pagecontent li {
+        color:#000;
+    }
+    
+    .pagecontent a {
+        color:#01963a;
+        text-decoration: underline;
+    }
+     .pagecontent ul, pagecontent li {
+         list-style: circle;
+         
+    }
+    
+     .pagecontent ul{
+         padding-left: 4rem;
+    }
+    
+    h1, h2, h3 {
+         line-height: 140%;
+        font-weight: bold;
+        padding-left: 2rem;
+    }
+    h1 {
+        font-size:36px;
+       
+    }
+    
+     h2 {
+        font-size:28px;
+         color:#01963a;
+       
+    }
+    
+     h3 {
+        font-size:20px;
+       
+    }
+    
+    #logBox {
+        padding-left: 2rem;
+        
+        
+    }
+    #RememberMe, .RememberMe {
+        display:none;
+    }
+    
+    #lLogonForm, #passwordbox {border: #01963a 5px solid;
+        font-family: 'Raleway', sans-serif; font-size:16px;
+        font-weight: 400;
+        line-height: 140%;
+        padding: 1rem;
+    }
+    
+    #passwordbox p, #passwordbox h3 {
+        padding-left: 0rem;
+    padding-right: 0rem;
+        padding-bottom: 1rem;
+    }
+    
+    .button, input#login {
+           color: #fff;
+    background: rgb(128,188,0,1.0);
+    border: 0px;
+    padding: .5rem 1rem;
+        
+    }
+    
+    a.button {
+           color: #fff;
+        text-decoration: none;
+    }
+    
+      .button:hover, input#login:hover {
+    background: rgb(128,188,0,0.75);
+   
+    }
+    
+    .janrainEngage {
+    line-height: 50px;
+    font-size: 12px;
+}
+    
+</style>
+
+ <div class="pagecontent">
+      
+      <div class="container ">
+
+     <div class="row">
+        <div class="col" id="row1text"> 
+            <h1>WELCOME TO THE REGIONAL FOOD BANK 
+OF OKLAHOMA&#8217;S GIFT SERVICE CENTER</h1>
+            <h2>YOUR RECURRING GIFTS DASHBOARD</h2>
+<p>Thank you for being a generous and dedicated partner. Because of you, families facing hunger in your community can get the nutritious food they need all year long. You&#8217;re making an incredible difference!</p></div>
+</div>
+
+  <div class="row">
+        <div class="col-md-6" id="row2columnsl"> 
+<h3>NEW TO THE GIFT SERVICE CENTER?</h3>
+            <p>This is your giving dashboard, where you can:</p>
+            <ul>
+                <li>Review your recurring gifts.</li>
+       <li>Check gift amounts and giving dates.</li>
+       <li>Change the amount of your gifts or upgrade your giving.</li>
+       <li>Update your credit card information.</li>
+       <li>Change your password.</li>
+      </ul>
+            <div id="passwordbox">
+            <h3>FOR FIRST-TIME USERS:</h3>
+            <p>Click to set up your password. Please use the email address associated with your gift.
+
+</p>
+            <button class="button" id="myBtn" >Set Your Password</button></div>
+</div>
+ <div class="col-md-6" id="row2columnsr"> 
+
+     <h3>LOG IN NOW</h3>
+     <p>To manage your recurring gifts.
+</p>
+     <div id="logBox" class="nav-links"> 
+  <form id="lLogonForm" name="lLogonForm" action="UserLogin" method="post">
+
+Username (email address associated with your gift):<br />
+  <input id="USERNAME" title="User Name" name="USERNAME" maxlength="60" /><br />
+  Password:<br />
+  <input id="Password" title="Password" name="Password" type="password" maxlength="20" /><br /><br /><input id="NEXTURL" name="NEXTURL" type="hidden" value="https://secure3.convio.net/rfbo/site/ServiceCenter" />
+  <input id="login" name="login" type="submit" value="Login" /><br />
+  <label class="RememberMe" for="RememberMe"><input id="RememberMe" title="Remember Me" name="RememberMe" type="checkbox" value="RememberMe" checked />Remember Me</label>
+           
+         </form>
+        
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Provide the email address associated with your gift below, and we'll send a link to reset your password.  </p>
+      <form id="lmainForgotPasswordForm" action="https://secure3.convio.net/rfbo/site/UserLogin?NEXTURL=[[T1:[[S8]]]]" method="post"  >
+<div id="usernamehide"><label for="USERNAME_3">User Name:</label>
+<input type="text" name="USERNAME" id="USERNAME_3"  size="20" maxlength="60" /></div>
+<label for="Email_1">Email:</label>
+<input type="text" name="Email" id="Email_1" maxlength="100" />
+
+<div class="actions">
+<input type="submit" name="SendPassword" id="SendPassword" value="Submit" class="uc-button"  />
+</div>
+<input type="hidden" name="NEXTURL" id="NEXTURL" value="https://secure3.convio.net/rfbo/site/SPageNavigator/GiftServiceCenter.html" />
+<input type="hidden" name="SendPassword" id="SendPassword" value="submit" />
+	
+</form>
+  </div>
+<!-- END Modal content -->
+</div>
+<!-- END The Modal -->
+
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    
+    #usernamehide {
+        display:none;
+    }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+    
+    .modal-content p {
+        padding-left:0rem;
+    }
+
+/* The Close Button */
+.close {
+  color: #555;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+    
+    #SendPassword {
+         color: #fff;
+    background: rgb(128,188,0,1.0);
+    border: 0px;
+    padding: .5rem 1rem;
+        margin-top:1rem;
+    }
+    
+     #SendPassword:hover {
+    background: rgb(128,188,0,0.75);
+    }
+    
+    #lmainForgotPasswordForm input {
+    display: list-item;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+    
+</style>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+    
+    // autofill username with email address
+    var first = document.getElementById('Email_1'),
+    second = document.getElementById('USERNAME_3');
+
+second.value = first.value;
+
+    first.onkeyup = function () { // or first.onchange
+  second.value = first.value;
+};
+    
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// redirect back to login page after submittions
+// var redirect = function(){
+  //  document.location.href="https://secure3.convio.net/rfbo/site/SPageNavigator/GiftServiceCenter.html"
+// }
+</script>
+
