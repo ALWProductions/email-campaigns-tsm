@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+			<!--[if !mso]><!-->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+			<!--<![endif]-->
+				<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style> 
+	
+				<style type="text/css">            
+					body {
+						height: 100% !important;
+						margin: 0 !important;
+						padding: 0 !important;
+						width: 100% !important; 
+					}
+					#MessageViewBody, #MessageWebViewDiv{
+						width: 100% !important;
+						display: block;
+						margin: 0 auto !important;
+					}
+					div[style*="margin: 16px 0"] {
+						margin: 0 !important;
+					}
+					div, button {
+						display: block !important;
+					}
+					table, td {
+						border-collapse: collapse !important;
+						mso-table-lspace: 0pt;
+						mso-table-rspace: 0pt;
+					}
+					table {
+						border-spacing: 0;
+					}
+					img {
+						outline: none;
+						text-decoration: none;
+						-ms-interpolation-mode: bicubic;
+					}
+                    ol, ul, li {
+                        font-weight: bold;
+                        font-family: Montserrat, Proxima Nova, Arial, sans-serif; 
+                    }
+					a {
+						color: #005487;
+						outline: none;
+						text-decoration: underline;
+						font-weight: bold;
+					}
+					a[x-apple-data-detectors] {
+						color: inherit !important;
+						text-decoration: none !important;
+						font-size: inherit !important;
+						font-family: inherit !important;
+						font-weight: inherit !important;
+						line-height: inherit !important;
+					}
+					* {
+						text-size-adjust: none;
+						-webkit-text-size-adjust: none;
+						-moz-text-size-adjust: none;
+						-ms-text-size-adjust: none;
+						-webkit-font-smoothing: antialiased;
+					}
+					.emailButton {
+						font-family: Montserrat, Proxima Nova, Arial, sans-serif; 
+						font-size: 16px; 
+						font-weight: bold; 
+						line-height: 120%; 
+						margin: 0; 
+						text-decoration: none; 
+						text-transform: uppercase; 
+						padding: 15px 30px;
+					}
+					.emailButton a {
+						color: #FFFFFF;
+						text-decoration: none; 
+						display: block;
+					}
+					.ReadMsgBody, .ExternalClass {
+						width: 100%;
+					}
+					.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+						line-height: 100%;
+					}
+					.gmail {
+						display: none !important;
+						width: 0 !important;
+					}
+					.leftColumnContent{
+						text-align: right;
+					}
+					.rightColumnContent{
+						text-align: left;
+					}
+					.calloutLCol{
+						text-align: center;
+					}
+					.calloutRCol{
+						text-align: left;
+					}
+					.eNewBorder{
+						border: none;
+					}
+					.show-on-mobile {
+						display: none!important;
+					}
+					.hide-on-mobile {
+						display: block !important;
+					}
+					.hide-on-desktop {
+						display: none !important;
+					}
+					.footer-social-icons {
+						text-align: center;
+					}
+					.footer-specific-logos {
+						text-align: center;
+					}
+
+					@media only screen and (max-width: 480px) {
+						#templateColumns{
+							width: 100% !important;
+						}
+						.templateColumnContainer{
+							display: block !important;
+							width: 100% !important;
+						}
+						.calloutcolumns {
+							display: block !important;
+							width: auto !important; 
+						}
+						.columnImage{
+							height: auto !important;
+							max-width: 480px !important;
+							width: 100% !important;
+						}
+						.leftColumnContent{
+							text-align: center;
+						}
+						.rightColumnContent{
+							text-align: center;
+						}
+						.calloutLCol{
+							padding-top: 10px !important;
+							text-align: center !important;
+						}
+						.calloutRCol{
+							text-align: center !important;
+							padding: 0 30px;
+						}
+						.eNewBorder{
+							border: none !important;
+						}
+						*[class~=hide_on_mobile] {
+							display: none !important;
+						}
+						*[class~=show_on_mobile] {
+							display: block !important;
+							width: auto !important;
+							max-height: inherit !important;
+							overflow: visible !important;
+							float: none !important;
+						}
+						 *[class="hide"]{
+							display: none !important;
+							width: 0 !important;
+							height: 0 !important;
+							padding: 0 !important;
+							font-size: 0 !important;
+							line-height: 0 !important;
+						}
+						.header-mobile{
+							line-height: 38px !important;
+							font-size: 40px !important;
+						}
+						.callout-mobile {
+							font-size: 30px !important;
+						}
+						.flexibleContainer {
+							width: 100% !important;
+							max-width: none;
+							text-align: center;
+							margin-left: auto!important;
+							margin-right: auto!important;
+						}
+						.show-on-mobile {
+							display: block !important;
+						}
+						.hide-on-mobile {
+							display: none!important;
+						}
+						.hide-on-desktop {
+							display: none !important;
+						}
+						.mobile-button {
+							/*width: 100% !important; */
+							/*max-width: none !important;*/
+							text-align: center !important;
+							margin: auto !important;
+							/*padding-left: 25% !important;*/
+							/*padding-right: 25% !important;*/
+							/*display: block !important;*/
+						}
+						.footer-social-icons {
+							text-align: center !important;
+						}
+						.footer-specific-logos {
+							text-align: center !important;
+						}
+					}
+				</style>
+				<style type="text/css">            
+					@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+						.hidden {
+							display: none !important;
+							width: 0 !important;
+						}
+						.header1 {
+							font-size: .8em;
+						}
+						.header2 {
+							font-size: .6em;
+						}
+						.widthMobile {
+							width: 100% !important;
+							max-width: 480px !important;
+						}
+						.widthFull {
+							width: 100% !important;
+						}
+						.photo {
+							width: 100% !important;
+							height: auto !important;
+						}
+						.button {
+							width: 175px !important;
+						}
+						.icon {
+							padding: 0 !important;
+						}
+						body {
+							min-width: 100% !important;
+							width: 100% !important;
+							height: 100% !important;
+							margin: 0 !important;
+							padding: 0 !important;
+						}
+						.donatebutton {
+							width: 100% !important;
+						}
+						.mobile-imgs {
+							display: block;
+							width: auto !important;
+						}
+						.footer-btn {
+							padding-top: 10px !important;
+							padding-bottom: 10px !important;
+						}
+					}	
+				</style>
+
+				<!--[if mso]><!-->
+					<style type="text/css">
+						@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+							.mso-center {
+										text-align: center;
+									}
+						}
+					</style>
+				<!--<![endif]-->
+	
+				<!--[if gte mso 9]><xml>
+				<o:OfficeDocumentSettings>
+				<o:AllowPNG></o:AllowPNG>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+				</o:OfficeDocumentSettings>
+				</xml><![endif]-->
+
+				<!--[if mso 12]>
+					<style type="text/css">
+						.xxxflexibleContainer{display:block !important; width:100% !important;}
+					</style>
+				<![endif]-->
+				<!--[if mso 14]>
+					<style type="text/css">
+						.xxxflexibleContainer{display:block !important; width:100% !important;}
+					</style>
+				<![endif]-->
+	</head>
+	
+
+	<body style="margin: 0; padding: 0; width: 100% !important; background-color: #D1D3D4;">
+	<!--[if mso]>
+	<style type="text/css">
+	body, table, td {font-familiy: Arial, Helvetica, sans-serif !important}
+	</style>
+	<![endif]-->	
+		<div align="center">
+			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="widthMobile" style="max-width: 600px !important;" width="600">
+				<tbody>
+					<tr><td style="padding: 0 0 0 0;" align="center" valign="top">
+						<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr><td style="font-family: 'Montserrat', san-serif; font-size: 33px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0;" align="center" valign="bottom">
+									<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+							
+									<!-- Visually Hidden Preheader Text : START -->
+										<div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;" align="center">Make your Annual Fund gift for 2023.</div> 
+									<!-- Visually Hidden Preheader Text : END -->
+				
+								
+	<!-- Logo START -->	
+	<tr><td align="center" valign="top" >
+		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="padding: 10px;"><tr><td align="center" valign="top">
+			<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer"><tr><td valign="top" width="100%" style="padding: 0px;">
+				<tr><td valign="top" width="100%" style="padding: 20px 10px 20px 0px;">
+					<table role="presentation" align="Left" border="0" cellpadding="0" cellspacing="0" class="flexibleContainer" width="250"><tr><td valign="top" style="text-align: center;" width="250">
+						<a href="https://www.feedingsandiego.org"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1qh/944943/1645558376EQAQf8i3/Feeding_San_Diego_Logo_Color.png" width="145" class="" alt="Feeding San Diego" style="max-width: 150px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; height: auto;"></a>
+					</td></tr></table>					
+					<table role="presentation" align="Right" border="0" cellpadding="0" cellspacing="0" width="175" class="flexibleContainer"><tr><td valign="top" style="padding: 20px 20px 0px 20px; text-align: center;">
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="175" class="emailButton mobile-button" style="border-collapse: separate; background-color: #DB781C; border-radius: 15px 0px 15px 0px;  cursor: auto;"><tr><td align="center" valign="middle" style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: none; padding: 15px 25px;">
+							<a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" target="_blank" style="color: #FFFFFF; text-decoration: none; font-size: 20px; font-weight: bolder; letter-spacing: normal; display: block; white-space: nowrap; text-transform: uppercase;">DONATE</a>
+						</td></tr></table>
+					</td></tr></table>
+				</td></tr>					
+			</td></tr></table>
+		</td></tr></table>
+	</td></tr>			
+	<!-- Logo END -->														
+								
+	<!-- Header Image START -->
+	<tr bgcolor="#ffffff"><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; color: #000000; padding: 0px 0px; margin: 0px; border-spacing: 0; text-align: center;" align="center" valign="top">
+		<a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" target="_blank"><img alt="Daughter handing her mother a package of potatoes from the food bank drive" border="0" class="photo" src="http://go.pardot.com/l/944943/2022-12-21/23ryxx/944943/1671676005n8zB17LA/Fy23_January_renewal_email_header.jpg" style="display: block; margin: 0 auto; border: 0;" width="100%" /></a>
+	</td></tr>
+	<!-- Header Image END -->
+		
+	<!-- Header Text START -->							
+	<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 32px; mso-line-height-rule: exactly; line-height: normal; color: #DB781C; padding: 15px 45px 0px 45px; font-weight: bold; text-align: center;" align="center" valign="top">
+		<span class="header1">Start the New Year Helping People Facing Hunger</span>
+	</td></tr>
+	<!-- Header Text END -->
+                                            
+	<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 10px 30px;" align="left" valign="top">
+		{{Recipient.FirstName}}, 
+        <br><br>We can&rsquo;t do this work without you. 
+        <br><br>Many of our neighbors here in San Diego County had an especially tough time over the last year dealing with the rising costs of food, gas, and other essential items. Meanwhile, 35% of all food produced in the US goes to waste. 
+        <br><br>As we head into the new year,  you can help ease the stress for families and seniors in need by helping rescue good food before it goes to waste. <a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" style="color: #005684; font-weight: bold; text-decoration: underline; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">Giving back and helping your neighbors in need is a compassionate way to kick off the new year</a><span style="color: #005684; font-weight: bold; text-decoration: none; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">.</span> Just think:
+	</td></tr>
+                                            
+    <tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 0px 30px 0px 30px;" align="left" valign="top">
+		<ul>
+            <li style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A;"><a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=0&amount=25&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" style="color: #005684; font-weight: bold; text-decoration: underline; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">A gift of $25</a> helps provide 50 meals for families facing hunger.</li>
+            <li style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A;"><a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=0&&amount=50&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" style="color: #005684; font-weight: bold; text-decoration: underline; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">A gift of $50</a> helps provide 100 meals for your neighbors in need.</li>
+            <li style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A;"><a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&&amount=15&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" style="color: #005684; font-weight: bold; text-decoration: underline; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">A monthly gift of $15 &#40;&#36;180/year&#41;</a> means a nutritious meal every day for someone facing hunger.</li>
+        </ul>
+	</td></tr>                                         
+                                            
+    <!-- Full Width Button START -->
+	<tr><td style="margin:0 auto; font-family: Montserrat, Proxima Nova, Arial, sans-serif;  border-collapse: collapse; font-size: 10px; color: #ffffff; text-align: center; text-decoration: none; padding: 0" bgcolor="#ffffff">
+		<table role="presentation"  class=" " bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; color: #ffffff; padding: 0px 30px 0px 30px;" align="center" valign="top">
+					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="210" class="emailButton mobile-button" style="border-collapse: separate; background-color: #DB781C; border-radius: 15px 0px 15px 0px;  cursor: auto;"><tr><td align="center" valign="middle" style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: none; padding: 15px 25px;">
+						<a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" target="_blank" style="color: #FFFFFF; text-decoration: none; font-size: 20px; font-weight: bolder; letter-spacing: normal; display: block; white-space: nowrap; text-transform: uppercase;">GIVE NOW</a>
+					</td></tr></table>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>
+	<!-- Full Width Button END --> 
+                                            
+    <tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 20px 30px 5px 30px;" align="left" valign="top">
+		Donate now and <a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" style="color: #005684; font-weight: bold; text-decoration: underline; font-size: 12pt; font-family: Montserrat, Proxima Nova, Arial, sans-serif;">make an impact for San Diegans in need</a>. Your ongoing support will help sustain critical hunger relief programs as the need for food assistance remains high.
+        <br><br>Every $1 helps provide 2 nutritious meals for families facing hunger throughout San Diego County.
+        <br><br>Thank you for supporting the 2023 Annual Fund Campaign and getting nourishing food to those who need it most.
+        <br><br>Gratefully,
+	</td></tr>	                                        
+												
+	<!-- Signature Signoff START -->
+	<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12px; padding: 0px 0px 0px 30px; margin-bottom: 0px; margin-top: 0px; border-spacing: 0px;" align="left" valign="bottom">
+		<img alt="Signature Signoff" border="0" src="http://go.pardot.com/l/944943/2022-02-22/ck1vc/944943/1645566530kZ85ZOph/Updated_Ali_signature.png" width="200" />
+	</td></tr>	
+
+	<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12pt; mso-line-height-rule: exactly; line-height: 22px; color: #4A4A4A; padding: 0px 30px 35px 30px;" align="left" valign="top">
+		Ali Colbran
+		<br>Director of Development
+	</td></tr>	
+	<!-- Signature Signoff END -->								
+						
+			
+<!-- Footer START -->																
+								<!-- Line Break START -->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #44555F;">&nbsp;</td></tr>
+								<!-- Line Break END-->				
+					
+	<!-- Logo START -->												
+	<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0;" align="center" valign="bottom" bgcolor="#44555F">
+		<a href="https://www.feedingsandiego.org"><img alt="Feeding San Diego" border="0" src="https://files.constantcontact.com/0bf2129a001/39242603-13c3-438a-85a2-e01e6fdb2eaa.png" width="110" style="max-width: 150px;" /></a>
+	</td></tr>										
+	<!-- Logo END -->					
+	
+								<!-- Line Break START -->
+								<tr><td height="20" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #44555F;">&nbsp;</td></tr>
+								<!-- Line Break END-->	
+					
+	<!-- Full Width Button START -->
+	<tr><td style="margin:0 auto;font-family: Montserrat, Proxima Nova, Arial, sans-serif;  border-collapse: collapse; font-size: 10px; color: #44555F; text-align: center; text-decoration: none; padding: 0" bgcolor="#44555F">
+		<table role="presentation"  class=" " bgcolor="#44555F" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 24px; color: #F5881F; padding: 0px 30px 0px 30px;" align="center" valign="top">
+					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="210" class="emailButton mobile-button" style="border-collapse: separate; background-color: #DE7C00; border-radius: 15px 0px 15px 0px;  cursor: auto;">
+						<tr><td align="center" valign="middle" style="font-family: Montserrat, Proxima Nova, Arial, sans-serif, Arial; font-size: 16px; font-weight: bold; line-height: 120%; margin: 0; text-decoration: none; text-transform: none; padding: 15px 25px;">
+							<a href="https://give.feedingsandiego.org/give/456256/#!/donation/checkout?recurring=1&c_src=DOL23A1A01_01EMAIL&utm_source=tsm-email&utm_medium=email&utm_campaign=fy23janrenewal&utm_content=email1wrs" target="_blank" style="color: #FFFFFF; text-decoration: none; font-size: 20px; font-weight: bolder; letter-spacing: normal; display: block; white-space: nowrap; text-transform: uppercase;">Donate</a>
+					</td></tr></table>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>
+	<!-- Full Width Button END -->				
+	
+								<!-- Line Break START -->
+								<tr><td height="15" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #44555F;">&nbsp;</td></tr>
+								<!-- Line Break END-->											
+							
+	<!-- Address Information START -->
+	<tr><td align="center" valign="top" width="100%" class="templateColumnContainer" bgcolor="#44555F">
+		<table role="presentation"  bgcolor="#44555F" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 24px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0;"  align="left" valign="bottom" bgcolor="#44555F">
+					<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsfooter1" ><tr><td align="center" valign="middle" width="100%" class="templateColumnContainer">
+						<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="calloutLCol" style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 12px; mso-line-height-rule: exactly; line-height: 20px; color: #ffffff; padding: 10px 30px 0px 30px; text-align: center;" align="center" valign="top">
+							9477 Waples Street, Ste 100 
+							<br>San Diego, CA 92121
+							<br><a href="{{Unsubscribe}}" rel="nofollow,noreferrer" style="font-weight: bold; text-decoration: underline; color: #ffffff;">Unsubscribe</a> &nbsp;|&nbsp; <a href="{{EmailPreferenceCenter}}" rel="nofollow,noreferrer" style="font-weight: bold; text-decoration: underline; color: #ffffff;">Update Profile</a>
+						</td></tr></table>
+					</td></tr></table>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>	
+	<!-- Address Information END -->	
+		
+								<!-- Line Break START -->
+								<tr><td height="5" style="font-size: 1px; line-height: 15px; mso-line-height-rule: exactly; background-color: #44555F;">&nbsp;</td></tr>
+								<!-- Line Break END-->	
+								
+	<!-- Affliate Logos START -->						
+	<tr><td align="center" valign="top" width="100%" class="templateColumnContainer" bgcolor="#44555F">
+		<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+				<tr><td width="100%" align="center" class="footer-specific-logos" style="margin-top: 0px; text-align: center; padding: 5px 20px 20px 20px;" valign="middle">
+					<img align="center" valign="bottom" id="1fortheplanet" alt="1% for the Planet" border="0" src="http://go.pardot.com/l/944943/2022-02-22/ck1v9/944943/1645566342wm7OfFnz/1ftp_Primary_Horizontal_White.png" width="85" height="auto" style="padding: 0px 15px 0px 15px; text-align: center; max-width: 80px;"/> 
+					&nbsp;
+					
+					<img align="center" valign="bottom" id="charity-navigator" alt="Charity Navigator" border="0" width="80" height="auto" src="http://go.pardot.com/l/944943/2022-03-18/cxf7d/944943/1647627138y9LQRuV8/Charity_Navigator_Logo_transparent_white_01.png" style="padding: 0px 0px 0px 0px; text-align: center; max-width: 80px;"/> 
+					&nbsp;
+					
+					<img align="center" valign="bottom" id="California-Association" alt="California Association of FB" border="0" width="80" height="auto" src="http://go.pardot.com/l/944943/2022-03-18/cxf7j/944943/1647627254RAORg8TT/CAFB_Logo_PROUD_MEMBER_white.png" style="padding: 0px 0px 0px 0px; text-align: center; max-width: 80px;"/> 
+					&nbsp;
+					
+					<img align="center" valign="bottom" id="Guidestar-Platinum" alt="Guidestar Platinum Tranparency" border="0" width="40" height="auto" src="http://go.pardot.com/l/944943/2022-03-18/cxf7l/944943/1647627277zbzngkds/Guidestar_logo.png" style="padding: 0px 0px 0px 0px; text-align: center; max-width: 40px;"/> 
+					&nbsp;
+					
+					<img align="center" valign="bottom" id="Feeding-America" alt="Feeding America Member" border="0" src="http://go.pardot.com/l/944943/2022-02-22/ck1qf/944943/1645558103czoqTwjH/feeding_america_b57f6f3d.png" width="70" height="auto" style="padding: 0px 0px 0px 0px; text-align: center; max-width: 70px;"/>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>			
+	<!-- Affliate Logos END -->		
+								
+								<!-- Line Break START -->
+								<tr><td height="20" style="font-size: 1px; line-height: 20px; mso-line-height-rule: exactly; background-color: #44555F;">&nbsp;</td></tr>
+								<!-- Line Break END-->	
+
+	<!-- Social Callout/Icons and Copyright START -->								
+	<tr><td align="center" valign="top"  bgcolor="#ffffff">
+		<table role="presentation"  bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align: center; background-color: #ffffff;">
+			<tbody>
+				<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 24px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0; padding: 15px 0px 0px 0px;"  align="left" valign="bottom" bgcolor="#ffffff">
+					<table role="presentation"  bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tbody>
+							<tr><td style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 24px; padding-bottom: 0px; margin-bottom: 0px; border-spacing: 0; padding: 0px;" id="dark-black-block" align="left" valign="bottom" bgcolor="#ffffff">
+								<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumnsfooter3" ><tr><td align="center" valign="middle" width="100%" class="templateColumnContainer">
+									<table role="presentation"  border="0" cellpadding="5" cellspacing="0" width="100%" height="auto"><tr><td class="templateColumnContainer footer-social-icons" style="margin-top: 0px; padding: 0px 0px 0px 0px;" align="center" valign="middle">
+										<p style="color: #005487; font-weight: bold; font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 18px;">&#35;FeedingSanDiego</p>
+										
+										<!-- FACEBOOK --> <a href="https://www.facebook.com/feedingsandiego"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1rc/944943/16455612150fY49BUr/facebook_visit_default_circle.png" alt="facebook" style="margin: 0px 0px 0px 0px; padding: 0px 2px 0px 0px;" width="30px" /></a> 
+										
+										<!-- TWITTER--><a href="https://twitter.com/FeedingSanDiego/"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1r9/944943/1645561182eOZsZGFh/twitter_visit_default_circle.png" alt="twitter" style="margin: 0px 0px 0px 0px; padding: 0px 2px 0px 2px;" width="30px" /></a> 
+										
+										<!-- INSTAGRAM --><a href="https://www.instagram.com/feedingsandiego/"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1qr/944943/1645558913SJFcBb9N/instagram_visit_default_circle.png" alt="instagram" style="margin: 0px 0px 0px 0px; padding: 0px 2px 0px 2px;" width="30px" /></a> 
+										
+										<!-- LINKEDIN --><a href="https://www.linkedin.com/company/feeding-san-diego/"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1qp/944943/1645558867tbS96kYl/linkedin_visit_default_circle.png" alt="linkedin" style="margin: 0px 0px 0px 0px; padding: 0px 2px 0px 2px;" width="30px" /></a>
+										
+										<!-- YOUTUBE --><a href="https://www.youtube.com/channel/UCa8X09ZF4JCYGuxoiwaxRpA"><img src="http://go.pardot.com/l/944943/2022-02-22/ck1qm/944943/1645558804bHI2zSbd/youtube_visit_default_circle.png" alt="youtube" style="margin: 0px 0px 0px 0px; padding: 0px 2px 0px 2px;" width="30px"/></a> 
+                                        
+                                        <!-- TIKTOK --><a href="https://www.tiktok.com/@feedingsandiego"><img src="http://go.pardot.com/l/944943/2022-10-09/vd7xv/944943/1665349090B9BRsRTW/tiktok_logo.png" alt="tiktok" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 2px;" width="30px"/></a> 
+									</td></tr></table>
+								</td></tr></table>								
+								<table role="presentation"  border="0" cellpadding="5" cellspacing="0" width="100%" height="auto"><tr><td align="center" valign="middle" width="100%" style="text-align: center;">
+									<table role="presentation"  border="0" cellpadding="0" cellspacing="0" width="100%" height="auto"><tr><td class="templateColumnContainer" style="font-family: Montserrat, Proxima Nova, Arial, sans-serif; font-size: 10px; mso-line-height-rule: exactly; line-height: 20px; color: #ABABAB; text-align: center;" align="center" valign="middle">
+										<p>&copy; 2023 Feeding San Diego</p>
+									</td></tr></table>
+								</td></tr></table>
+							</td></tr>
+						</tbody>
+					</table>
+				</td></tr>
+			</tbody>
+		</table>
+	</td></tr>	
+	<!-- Social Callout/Icons and Copyright END -->	
+<!-- Footer END -->	
+						
+										</tbody>	
+									</table>		
+								</td></tr>
+							</tbody>					
+						</table>					
+					</td></tr>
+				</tbody>					
+			</table>
+		</div>
+	
+	<!-- Analytics START -->
+	
+<style data-ignore-inlining>@media (prefers-color-scheme: dark) { #_t::before {content:url('https://pyja599c.emltrk.com/v2/pyja599c?rd&i={{Recipient.ID}}');}} @media (prefers-color-scheme: light) { #_t::before {content:url('https://pyja599c.emltrk.com/v2/pyja599c?rl&i={{Recipient.ID}}');}} @media print{ #_t {background-image:url('https://pyja599c.emltrk.com/v2/pyja599c?p&i={{Recipient.ID}}');}} div.OutlookMessageHeader {background-image:url('https://pyja599c.emltrk.com/v2/pyja599c?f&i={{Recipient.ID}}')} table.moz-email-headers-table {background-image:url('https://pyja599c.emltrk.com/v2/pyja599c?f&i={{Recipient.ID}}')} blockquote #_t {background-image:url('https://pyja599c.emltrk.com/v2/pyja599c?f&i={{Recipient.ID}}')} #MailContainerBody #_t {background-image:url('https://pyja599c.emltrk.com/v2/pyja599c?f&i={{Recipient.ID}}')}</style><div id="_t"></div>
+<img src="https://pyja599c.emltrk.com/v2/pyja599c?i={{Recipient.ID}}" width="1" height="1" border="0" alt="" />
+
+	
+	<!-- Analytics END -->
+	
+	</body>	
+</html>	
